@@ -2,7 +2,7 @@ import { CustomButton } from "@/components/ui/custom-button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
 
 const ContactPreview = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -36,27 +36,17 @@ const ContactPreview = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">hello@myagentverse.com</p>
+                    <p className="text-muted-foreground">Myagentverse@gmail.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Office</p>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">+92331950919</p>
                   </div>
                 </div>
               </div>
@@ -103,7 +93,7 @@ const ContactPreview = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium mb-2">
                   Phone (Optional)
@@ -115,7 +105,7 @@ const ContactPreview = () => {
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
@@ -128,7 +118,7 @@ const ContactPreview = () => {
                   required
                 />
               </div>
-              
+
               <CustomButton type="submit" variant="hero" size="lg" className="w-full">
                 Send Message
                 <Send className="ml-2 h-5 w-5" />

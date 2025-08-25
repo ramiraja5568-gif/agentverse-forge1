@@ -4,74 +4,40 @@ import { Link } from "react-router-dom";
 
 const plans = [
   {
-    name: "Starter",
-    price: 99,
-    period: "month",
-    description: "Perfect for small businesses getting started with AI",
-    features: [
-      "1 Custom AI Agent",
-      "Basic Integration",
-      "Email Support",
-      "1 Revision",
-      "Basic Analytics",
-    ],
-    cta: "Get Started",
-    popular: false,
-  },
-  {
-    name: "Pro",
-    price: 299,
-    period: "month",
+    name: "main",
+    price: 4999,
+    period: "year",
     description: "Ideal for growing businesses with multiple needs",
     features: [
-      "3 Custom AI Agents",
+      "1 Custom AI Agents",
       "Advanced Integration",
       "Priority Support",
       "3 Revisions",
       "Advanced Analytics",
-      "API Access",
     ],
-    cta: "Start Pro",
+    cta: "Start main",
     popular: true,
-  },
-  {
-    name: "Enterprise",
-    price: 799,
-    period: "month",
-    description: "For large organizations with complex requirements",
-    features: [
-      "Unlimited AI Agents",
-      "Custom Integration",
-      "24/7 Dedicated Support",
-      "Unlimited Revisions",
-      "Custom Analytics",
-      "White-label Solutions",
-      "On-premise Deployment",
-    ],
-    cta: "Contact Sales",
-    popular: false,
   },
 ];
 
 const PricingPreview = () => {
   return (
-    <section className="py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple, Transparent Pricing
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Choose the perfect plan for your business. All plans include our core AI development
-            services with varying levels of support and customization.
-          </p>
-        </div>
+    <section className="flex items-center justify-center min-h-screen bg-white">
+      <div className="text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Simple, Transparent Pricing
+        </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
+          Choose the perfect plan for your business. All plans include our core
+          AI development services with varying levels of support and customization.
+        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        {/* Centered Single Card */}
+        <div className="flex justify-center">
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className={`relative p-8 rounded-2xl border bg-card hover-lift animate-slide-up ${
+              className={`relative p-8 rounded-2xl border bg-card hover-lift animate-slide-up max-w-sm w-full ${
                 plan.popular
                   ? "border-primary shadow-lg scale-105"
                   : "border-border"
@@ -91,11 +57,13 @@ const PricingPreview = () => {
                 <p className="text-muted-foreground mb-4">{plan.description}</p>
                 <div className="flex items-baseline justify-center">
                   <span className="text-4xl font-bold">${plan.price}</span>
-                  <span className="text-muted-foreground ml-1">/{plan.period}</span>
+                  <span className="text-muted-foreground ml-1">
+                    /{plan.period}
+                  </span>
                 </div>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 text-left">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center">
                     <Check className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
@@ -104,8 +72,8 @@ const PricingPreview = () => {
                 ))}
               </ul>
 
-              <CustomButton 
-                asChild 
+              <CustomButton
+                asChild
                 variant={plan.popular ? "hero" : "outline"}
                 size="lg"
                 className="w-full"
@@ -116,6 +84,7 @@ const PricingPreview = () => {
           ))}
         </div>
 
+        {/* Extra button under card */}
         <div className="text-center mt-12">
           <CustomButton asChild variant="outline" size="lg">
             <Link to="/pricing">View All Plans & Features</Link>

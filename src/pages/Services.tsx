@@ -15,7 +15,7 @@ const services = [
       "Automated ticket routing"
     ],
     icon: MessageSquare,
-    price: "Starting at $199/month",
+    price: "Starting at $4999/year",
   },
   {
     name: "Sales Assistant",
@@ -28,47 +28,11 @@ const services = [
       "Performance analytics"
     ],
     icon: Users,
-    price: "Starting at $299/month",
+    price: "Starting at 4999/year",
   },
-  {
-    name: "Data Research Agent",
-    description: "Powerful research assistant that gathers, analyzes, and reports on market data, competitor intelligence, and trends.",
-    features: [
-      "Web scraping & data collection",
-      "Competitive analysis",
-      "Market research reports",
-      "Real-time monitoring",
-      "Custom dashboards"
-    ],
-    icon: BarChart,
-    price: "Starting at $399/month",
-  },
-  {
-    name: "Content Generator",
-    description: "Creative AI that produces high-quality content for blogs, social media, marketing campaigns, and documentation.",
-    features: [
-      "Blog post generation",
-      "Social media content",
-      "Marketing copy",
-      "SEO optimization",
-      "Brand voice consistency"
-    ],
-    icon: FileText,
-    price: "Starting at $249/month",
-  },
-  {
-    name: "Process Automation Agent",
-    description: "Workflow automation specialist that streamlines repetitive tasks and integrates with your existing tools.",
-    features: [
-      "Workflow automation",
-      "System integrations",
-      "Document processing",
-      "Email automation",
-      "Task management"
-    ],
-    icon: Zap,
-    price: "Starting at $349/month",
-  },
+  
+  
+  
   {
     name: "Personal AI Assistant",
     description: "Dedicated AI assistant that manages schedules, handles communications, and provides executive support.",
@@ -80,7 +44,7 @@ const services = [
       "Travel coordination"
     ],
     icon: Bot,
-    price: "Starting at $449/month",
+    price: "Starting at $4999/year",
   },
 ];
 
@@ -132,12 +96,7 @@ const Services = () => {
                     ))}
                   </ul>
                   
-                  <div className="border-t pt-6">
-                    <p className="text-lg font-semibold text-primary mb-4">{service.price}</p>
-                    <CustomButton variant="outline" size="lg" className="w-full">
-                      Learn More
-                    </CustomButton>
-                  </div>
+                  
                 </div>
               ))}
             </div>
