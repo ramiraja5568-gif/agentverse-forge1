@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import Features from "@/components/sections/Features";
 import PricingPreview from "@/components/sections/PricingPreview";
-import Testimonials from "@/components/sections/Testimonials";
+// import Testimonials from "@/components/sections/Testimonials";
 import ContactPreview from "@/components/sections/ContactPreview";
 
 const Index = () => {
@@ -14,7 +14,7 @@ const Index = () => {
         <Hero />
         <Features />
         <PricingPreview />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <ContactPreview />
       </main>
       <Footer />

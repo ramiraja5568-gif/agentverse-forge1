@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const plans = [
   {
-    name: "main",
+    name: "Basic",
     price: 4999,
     period: "year",
     description: "Ideal for growing businesses with multiple needs",
@@ -22,7 +22,7 @@ const plans = [
 
 const PricingPreview = () => {
   return (
-    <section className="flex items-center justify-center min-h-screen bg-white">
+    <section id="pricing" className="flex items-center justify-center min-h-screen bg-white">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Simple, Transparent Pricing
