@@ -42,7 +42,7 @@ const Hero = () => {
             {/* Watch Demo button */}
             <CustomButton asChild variant="outline_white" size="xl">
               <a 
-                href="https://www.youtube.com/watch?v=T9ljXtcYOww" 
+                href="https://www.youtube.com/watch?v=29yJNRH13BI" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group"
@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="mt-12 max-w-4xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-black/20 backdrop-blur-sm border border-white/20">
               <iframe
-                src="https://www.youtube.com/embed/T9ljXtcYOww"
+                src="https://www.youtube.com/embed/29yJNRH13BI"
                 title="MyAgentVerse Demo"
                 className="w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
